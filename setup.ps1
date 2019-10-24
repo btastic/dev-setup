@@ -8,4 +8,4 @@ if (!(Test-Path -Path "$env:ProgramData\Chocolatey")) {
 }
 
 # for each package in the list run install
-Get-Content ".\packages" | ForEach-Object{($_ -split "\r\n")[0]} | ForEach-Object{choco install -y $_}
+Get-Content ".\packages.txt" | ForEach-Object{($_ -split "\r\n")[0]} | ForEach-Object{choco install -y $_}
