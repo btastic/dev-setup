@@ -21,3 +21,4 @@ innosetup
 1password
 hwinfo.install
 microsoft-teams
+azure-cli
